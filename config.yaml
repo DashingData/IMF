@@ -1,1 +1,24 @@
 # config.yaml
+
+# 👇 Yeh section data folders ke path define karta hai
+data_paths:
+  weo: data/raw/weo/
+  ifs: data/raw/ifs/
+  gfs: data/raw/gfs/
+  worldbank: data/raw/worldbank/
+  manual_labels: data/raw/manual_labels/
+  processed: data/processed/
+
+# 👇 Model files kaha save/load honge
+model:
+  risk_model: models/risk_score_model.pkl
+  default_clf: models/default_classifier.pkl
+  shap_summary: models/shap_summary.pkl
+
+# 👇 Dashboard ke liye streamlit ka port number
+dashboard:
+  port: 8501
+
+# 👇 Future ke liye LLM config placeholder
+llm:
+  model_name: "gpt-4"  # or any HF model
