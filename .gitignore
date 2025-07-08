@@ -1,1 +1,12 @@
-# .gitignore
+# Virtual environment folder ignore karo (ye local Python setup ke liye hota hai)
+env/
+
+# Python compiled files ignore karo (.pyc and __pycache__ auto bante hain)
+__pycache__/
+*.pyc
+
+# Jupyter notebook checkpoints ignore karo (autosave hote hain)
+.ipynb_checkpoints/
+
+# Environment variable file ignore karo (isme API keys ya secrets ho sakte hain)
+.env
